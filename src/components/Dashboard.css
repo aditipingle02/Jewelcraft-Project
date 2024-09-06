@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+ 
+  .flex {
+    display: flex;
+  }
+ 
+  .flex-col {
+    flex-direction: column;
+  }
+ 
+  .items-center {
+    align-items: center;
+  }
+ 
+  .justify-center {
+    justify-content: center;
+  }
+ 
+  .min-h-screen {
+    min-height: 100vh;
+  }
+ 
+  .bg-gradient-to-br {
+    background: linear-gradient(to bottom right, var(--primary), var(--primary-foreground));
+  }
+ 
+  .bg-card {
+    background-color: var(--card);
+  }
+ 
+  .p-8 {
+    padding: 2rem;
+  }
+ 
+  .rounded-2xl {
+    border-radius: 1.5rem;
+  }
+ 
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .w-full {
+    width: 100%;
+  }
+ 
+  .max-w-md {
+    max-width: 28rem;
+  }
+ 
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+ 
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out;
+  }
+ 
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease-in-out;
+  }
+ 
+  .text-card-foreground {
+    color: var(--card-foreground);
+  }
+ 
+  .font-serif {
+    font-family: serif;
+  }
+ 
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+ 
+  .font-bold {
+    font-weight: 700;
+  }
+ 
+  .text-lg {
+    font-size: 1.125rem;
+  }
+ 
+  .font-medium {
+    font-weight: 500;
+  }
+ 
+  .flex-1 {
+    flex: 1;
+  }
+ 
+  .mr-4 {
+    margin-right: 1rem;
+  }
+ 
+  .bg-muted {
+    background-color: var(--muted);
+  }
+ 
+  .text-muted-foreground {
+    color: var(--muted-foreground);
+  }
+ 
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+ 
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+ 
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+ 
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+ 
+  .focus\:ring-2:focus {
+    box-shadow: 0 0 0 2px var(--primary);
+  }
+ 
+  .focus\:border-transparent:focus {
+    border-color: transparent;
+  }
+ 
+  .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+ 
+  .font-semibold {
+    font-weight: 600;
+  }
+ 
+  .grid {
+    display: grid; padding-top:20px;
+  }
+ 
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  .gap-6 {
+    gap: 1.5rem;
+  }
+ 
+  .relative {
+    position: relative;
+  }
+ 
+  .group {border:1px solid #CCC; padding:10px;}
+  .group img {}
+  .btn-save {width:100%; margin:20px 0; background: #202020; color:#FFF;}
+  .btn-save:hover {}
+ 
+  .group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+  }
+ 
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .duration-300 {
+    transition-duration: 300ms;
+  }
+ 
+  .z-10 {
+    z-index: 10;
+  }
+ 
+  .absolute {
+    position: absolute;
+  }
+ 
+  .top-3 {
+    top: 0.75rem;
+  }
+ 
+  .right-3 {
+    right: 0.75rem;
+  }
+ 
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+ 
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+ 
+  /* Responsive Image Grid */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem; /* Adjust the gap between items */
+  }
+   .save-btn{
+    background-color: #369bdf;
+    width:'1000px';
+     color: black;
+   }
+   .save-btn:hover{
+    background-color: #fbfbfb;
+    color: black;
+   }
+ 
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem; /* Rounded corners */
+    object-fit: cover; /* Cover the container */
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+  .image-grid img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+ 
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+ 
+  * {
+    box-sizing: border-box;
+  }
+
+  .main-logo {
+    max-width: 180px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
